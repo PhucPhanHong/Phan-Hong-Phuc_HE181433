@@ -21,17 +21,17 @@ int main()
         printf("Taxable income: 0\n");
         printf("Income tax: 0\n");
     }
-    else if (ti > 0 && ti <= 5000000)
+    else if (ti <= 5000000)
     {
         printf("Taxable income: %ld\n", ti);
         printf("Income tax: %ld\n", (long)(ti * 0.05));
     }
-    else if (ti >= 5000001 && ti <= 10000000)
+    else if (ti <= 10000000)
     {
         printf("Taxable income: %ld\n", ti);
         printf("Income tax: %ld\n", (long)(5000000 * 0.05 + (ti - 5000000) * 0.1));
     }
-    else if (ti >= 10000001 && ti <= 18000000)
+    else if (ti <= 18000000)
     {
         printf("Taxable income: %ld\n", ti);
         printf("Income tax: %ld\n", (long)(5000000 * 0.05 + 5000000 * 0.1 + (ti - 10000000) * 0.15));
